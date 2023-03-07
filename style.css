@@ -29,8 +29,8 @@ body {
 .header {
   height: 95vh;
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.65),
-      rgba(255, 255, 255, 0.65)
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
     ),
     url(stones-g93c526508_1920.jpg);
   /* url(pebble-g422b4f62b_1920.jpg); */
@@ -67,10 +67,48 @@ body {
   font-size: 80px;
   font-weight: 400;
   letter-spacing: 12px;
+  animation: moveFromLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
 .heading-pri-sub {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 10px;
+  animation: moveFromRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
