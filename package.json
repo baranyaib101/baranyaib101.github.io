@@ -1,0 +1,22 @@
+{
+  "name": "kepessegkerekito",
+  "version": "1.0.0",
+  "description": "kepessegkerekito sass version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baranyaib101/baranyaib101.github.io.git"
+  },
+  "author": "B@lashka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baranyaib101/baranyaib101.github.io/issues"
+  },
+  "homepage": "https://github.com/baranyaib101/baranyaib101.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
