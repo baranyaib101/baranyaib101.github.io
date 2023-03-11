@@ -1,0 +1,34 @@
+.header {
+  height: 95vh;
+  max-width: 100%;
+  background-image: linear-gradient(
+      rgba($color-white, 0.6),
+      rgba($color-white, 0.6)
+    ),
+    url("../img/stones-g93c526508_1920.jpg");
+  // url("../img/pebble-g422b4f62b_1920.jpg");
+
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+
+  &__logo-box {
+    position: absolute;
+    left: 4rem;
+    top: 4rem;
+  }
+
+  &__logo {
+    height: 8rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-55%, -50%);
+    color: $color-text-dark-grey;
+    text-align: center;
+  }
+}
