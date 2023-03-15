@@ -17,6 +17,7 @@ body {
     animation: moveFromLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    padding-bottom: 4rem;
   }
 
   &--sub {
@@ -59,10 +60,22 @@ body {
   color: $color-grey-light-1;
 }
 
+.hs-color-orange {
+  background-image: linear-gradient(
+    to right,
+    $color-light-orange,
+    $color-dark-orange
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .heading-tertiary {
   font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
+  color: $color-grey-dark-3;
 }
 
 .paragraph {

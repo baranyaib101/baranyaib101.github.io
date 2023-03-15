@@ -130,3 +130,25 @@
     filter: blur(2px) brightness(70%);
   }
 }
+
+.section-logopedia {
+  background-color: $color-grey-light-1;
+  padding: 10rem 0;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+  .paragraph {
+    padding-right: 5rem;
+  }
+
+  .img-kislany {
+    // position: relative;
+
+    .kislany {
+      width: 90%;
+      // position: absolute;
+      left: 10rem;
+      top: 0;
+      box-shadow: 0 1rem 2rem rgba($color-dark-orange, 0.2);
+    }
+  }
+}
