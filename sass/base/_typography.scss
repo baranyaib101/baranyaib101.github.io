@@ -3,7 +3,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.6;
-  color: $color-text-ligth-grey;
+  color: $color-grey-dark;
   padding: 3rem;
 }
 
@@ -26,5 +26,49 @@ body {
     animation: moveFromRight;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+  }
+}
+
+.heading-secondary {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+}
+
+.hs-color-blue {
+  background-image: linear-gradient(
+    to right,
+    $color-light-blue,
+    $color-dark-blue
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hs-color-green {
+  background-image: linear-gradient(
+    to right,
+    $color-light-green,
+    $color-dark-green
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: $color-grey-light-1;
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }
