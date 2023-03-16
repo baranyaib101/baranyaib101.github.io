@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 @keyframes moveFromLeft {
   0% {
     opacity: 0;
@@ -34,6 +51,16 @@
 
 html {
   font-size: 62.5%;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -99,6 +126,13 @@ body {
   color: transparent;
 }
 
+.hs-color-purple {
+  background-image: linear-gradient(to right, #aa50a8, #891477);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #f7f7f7;
+}
+
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
@@ -148,14 +182,10 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto;
+  display: flow-root;
 }
 .row:not(:last-child) {
   margin-bottom: 6rem;
-}
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 .row [class^=col-] {
   float: left;
@@ -209,7 +239,7 @@ body {
   position: absolute;
   left: 50%;
   top: 40%;
-  transform: translate(-55%, -50%);
+  transform: translate(-50%, -50%);
   color: #333;
   text-align: center;
 }
@@ -440,4 +470,29 @@ body {
   left: 10rem;
   top: 0;
   box-shadow: 0 1rem 2rem rgba(255, 119, 48, 0.2);
+}
+
+.section-nyelvlokes {
+  height: 180vh;
+  max-width: 100%;
+  padding: 10rem 0;
+  background-image: linear-gradient(to right bottom, rgba(170, 80, 168, 0.5), rgba(137, 20, 119, 0.5)), url(../img/sea-stones-g33b8e1112_1920.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+}
+.section-nyelvlokes > * {
+  transform: skewY(7deg);
+}
+
+.nyelvlokes-text {
+  color: #f7f7f7;
+  font-size: 1.76rem;
+  padding: 1rem 20rem;
+}
+
+.nyelvlokes-head-text {
+  color: #f7f7f7;
+  font-size: 2.24rem;
+  padding: 1rem 20rem;
 }/*# sourceMappingURL=main.css.map */

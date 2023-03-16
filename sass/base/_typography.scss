@@ -71,6 +71,17 @@ body {
   color: transparent;
 }
 
+.hs-color-purple {
+  background-image: linear-gradient(
+    to right,
+    $color-light-purple,
+    $color-dark-purple
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: $color-grey-light-1;
+}
+
 .heading-tertiary {
   font-size: $default-font-size;
   font-weight: 700;

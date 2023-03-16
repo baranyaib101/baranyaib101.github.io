@@ -152,3 +152,34 @@
     }
   }
 }
+
+.section-nyelvlokes {
+  height: 180vh;
+  max-width: 100%;
+  padding: 10rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-light-purple, 0.5),
+      rgba($color-dark-purple, 0.5)
+    ),
+    url(../img/sea-stones-g33b8e1112_1920.jpg);
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.nyelvlokes-text {
+  color: $color-grey-light-1;
+  font-size: $default-font-size * 1.1;
+  padding: 1rem 20rem;
+}
+
+.nyelvlokes-head-text {
+  color: $color-grey-light-1;
+  font-size: $default-font-size * 1.4;
+  padding: 1rem 20rem;
+}
