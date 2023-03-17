@@ -1,32 +1,67 @@
 body {
   font-family: "Lato", sans-serif;
-  font-size: 1.6rem;
+  font-size: $default-font-size;
   font-weight: 400;
   line-height: 1.6;
   color: $color-grey-dark;
-  padding: 3rem;
 }
 
 .heading-pri {
   text-transform: uppercase;
 
   &--main {
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 700;
-    letter-spacing: 1.2rem;
+    letter-spacing: 1.1rem;
     animation: moveFromLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
+
+    @include respond(tab-land) {
+      font-size: 6rem;
+      font-weight: 700;
+      letter-spacing: 1.05rem;
+      padding-bottom: 2.5rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 5rem;
+      font-weight: 700;
+      letter-spacing: 1rem;
+      padding-bottom: 2rem;
+    }
+
+    @include respond(phone) {
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: 0.95rem;
+      padding-bottom: 1.5rem;
+    }
   }
 
   &--sub {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 700;
     letter-spacing: 1rem;
     animation: moveFromRight;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+
+    @include respond(tab-land) {
+      font-size: 1.7rem;
+      letter-spacing: 0.95rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 1.6rem;
+      letter-spacing: 0.9rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+      letter-spacing: 0.85rem;
+    }
   }
 }
 
