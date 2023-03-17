@@ -179,6 +179,10 @@ body {
   margin-top: 10rem !important;
 }
 
+.u-margin-top-very-huge {
+  margin-top: 60rem !important;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -473,7 +477,7 @@ body {
 }
 
 .section-nyelvlokes {
-  height: 180vh;
+  height: 210vh;
   max-width: 100%;
   padding: 10rem 0;
   background-image: linear-gradient(to right bottom, rgba(170, 80, 168, 0.5), rgba(137, 20, 119, 0.5)), url(../img/sea-stones-g33b8e1112_1920.jpg);
@@ -493,6 +497,64 @@ body {
 
 .nyelvlokes-head-text {
   color: #f7f7f7;
-  font-size: 2.24rem;
-  padding: 1rem 20rem;
+  font-size: 2.4rem;
+  background-color: #891477;
+  padding: 3rem 20rem;
+}
+
+.nyelvlokes-area {
+  position: relative;
+}
+
+.nyelvlokes-gomb {
+  color: #f7f7f7;
+  border-radius: 50%;
+}
+.nyelvlokes-gomb-1 {
+  background-color: #2998ff;
+  height: 30.8rem;
+  width: 30.8rem;
+  position: absolute;
+  left: 17rem;
+  top: 11rem;
+}
+.nyelvlokes-gomb-2 {
+  background-color: #ffb900;
+  height: 30.8rem;
+  width: 30.8rem;
+  position: absolute;
+  left: 72rem;
+  top: 14rem;
+}
+.nyelvlokes-gomb-3 {
+  background-color: #7ed56f;
+  height: 35.2rem;
+  width: 35.2rem;
+  position: absolute;
+  left: 45rem;
+  top: -4rem;
+}
+.nyelvlokes-gomb-4 {
+  background-color: #aa50a8;
+  height: 33rem;
+  width: 33rem;
+  position: absolute;
+  left: 42rem;
+  top: 23rem;
+}
+
+.nyelvlokes-text-cell {
+  text-align: center;
+  padding: 5rem 2rem;
+  font-size: 2.08rem;
+}
+
+.nyelv-text-top {
+  text-transform: uppercase;
+  padding: 2rem 2rem;
+  border-bottom: 1px dashed #f7f7f7;
+}
+
+.nyelv-text-bottom {
+  padding: 2rem 2rem;
 }/*# sourceMappingURL=main.css.map */
