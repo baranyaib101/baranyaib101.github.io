@@ -126,6 +126,13 @@ body {
   color: transparent;
 }
 
+.hs-color-red {
+  background-image: linear-gradient(to right, #df6464, #cc2525);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .hs-color-purple {
   background-image: linear-gradient(to right, #aa50a8, #891477);
   -webkit-background-clip: text;
@@ -515,7 +522,7 @@ body {
   height: 30.8rem;
   width: 30.8rem;
   position: absolute;
-  left: 17rem;
+  left: 15rem;
   top: 11rem;
 }
 .nyelvlokes-gomb-2 {
@@ -523,7 +530,7 @@ body {
   height: 30.8rem;
   width: 30.8rem;
   position: absolute;
-  left: 72rem;
+  left: 70rem;
   top: 14rem;
 }
 .nyelvlokes-gomb-3 {
@@ -531,7 +538,7 @@ body {
   height: 35.2rem;
   width: 35.2rem;
   position: absolute;
-  left: 45rem;
+  left: 43rem;
   top: -4rem;
 }
 .nyelvlokes-gomb-4 {
@@ -539,7 +546,7 @@ body {
   height: 33rem;
   width: 33rem;
   position: absolute;
-  left: 42rem;
+  left: 40rem;
   top: 23rem;
 }
 
@@ -557,4 +564,59 @@ body {
 
 .nyelv-text-bottom {
   padding: 2rem 2rem;
+}
+
+.section-tulerzekeny {
+  background-color: #f7f7f7;
+  margin-top: -10rem;
+  padding: 20rem 0 10rem 0;
+}
+.section-tulerzekeny .paragraph {
+  padding-right: 5rem;
+}
+.section-tulerzekeny .img-kisgyerek .kisgyerek {
+  width: 90%;
+  left: 10rem;
+  top: 0;
+  box-shadow: 0 1rem 2rem rgba(204, 37, 37, 0.2);
+}
+
+.copyright {
+  height: 15rem;
+  background-color: #333;
+  color: #f7f7f7;
+  text-align: center;
+  padding: 7rem 0;
+}
+
+.businesscard {
+  background-color: #fff;
+  height: 25rem;
+  width: 25rem;
+  position: fixed;
+  top: 20rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 3000;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 8rem 0;
+}
+.businesscard a:link,
+.businesscard a:visited {
+  text-decoration: none;
+  color: #1098ad;
+}
+.businesscard a:hover {
+  color: orangered;
+  text-decoration: underline orangered;
+}
+
+.tel,
+.email {
+  font-size: 1.6rem;
+}
+
+.nev {
+  font-size: 2.4rem;
 }/*# sourceMappingURL=main.css.map */

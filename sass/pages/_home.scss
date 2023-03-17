@@ -198,7 +198,7 @@
     height: 22rem * 1.4;
     width: 22rem * 1.4;
     position: absolute;
-    left: 17rem;
+    left: 15rem;
     top: 11rem;
   }
 
@@ -207,7 +207,7 @@
     height: 22rem * 1.4;
     width: 22rem * 1.4;
     position: absolute;
-    left: 72rem;
+    left: 70rem;
     top: 14rem;
   }
 
@@ -216,7 +216,7 @@
     height: 22rem * 1.6;
     width: 22rem * 1.6;
     position: absolute;
-    left: 45rem;
+    left: 43rem;
     top: -4rem;
   }
 
@@ -225,7 +225,7 @@
     height: 22rem * 1.5;
     width: 22rem * 1.5;
     position: absolute;
-    left: 42rem;
+    left: 40rem;
     top: 23rem;
   }
 }
@@ -243,4 +243,73 @@
 }
 .nyelv-text-bottom {
   padding: 2rem 2rem;
+}
+
+.section-tulerzekeny {
+  background-color: $color-grey-light-1;
+  margin-top: -10rem;
+  padding: 20rem 0 10rem 0;
+
+  .paragraph {
+    padding-right: 5rem;
+  }
+
+  .img-kisgyerek {
+    // position: relative;
+
+    .kisgyerek {
+      width: 90%;
+      // position: absolute;
+      left: 10rem;
+      top: 0;
+      box-shadow: 0 1rem 2rem rgba($color-dark-red, 0.2);
+    }
+  }
+}
+
+.copyright {
+  height: 15rem;
+  background-color: $color-grey-dark-3;
+  color: $color-grey-light-1;
+  text-align: center;
+  padding: 7rem 0;
+}
+
+.businesscard {
+  background-color: $color-white;
+  // background-image: linear-gradient(
+  //     rgba($color-white, 0.9),
+  //     rgba($color-white, 0.9)
+  //   ),
+  //   url("../img/stones-g93c526508_1920.jpg");
+  height: 25rem;
+  width: 25rem;
+  position: fixed;
+  top: 20rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 3000;
+  box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+  text-align: center;
+  padding: 8rem 0;
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: #1098ad;
+  }
+
+  a:hover {
+    color: orangered;
+    text-decoration: underline orangered;
+  }
+}
+
+.tel,
+.email {
+  font-size: $default-font-size;
+}
+
+.nev {
+  font-size: $default-font-size * 1.5;
 }
