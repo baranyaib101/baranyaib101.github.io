@@ -103,7 +103,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .heading-pri--main {
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 700;
     letter-spacing: 1rem;
     padding-bottom: 3rem;
@@ -111,10 +111,10 @@ body {
 }
 @media (max-width: 37.5em) {
   .heading-pri--main {
-    font-size: 3.5rem;
+    font-size: 6rem;
     font-weight: 700;
     letter-spacing: 0.95rem;
-    padding-bottom: 10rem;
+    padding-bottom: 7rem;
   }
 }
 .heading-pri--sub {
@@ -341,7 +341,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .header__text-box {
-    padding-top: 50rem;
+    padding-top: 40rem;
   }
 }
 
