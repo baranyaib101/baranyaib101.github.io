@@ -256,6 +256,11 @@ body {
 .row [class^=col-]:not(:last-child) {
   margin-right: 8rem;
 }
+@media (max-width: 56.25em) {
+  .row [class^=col-] {
+    width: 100% !important;
+  }
+}
 .row .col-1-of-2 {
   width: calc((100% - 8rem) / 2);
 }
@@ -290,18 +295,81 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 }
+@media (max-width: 75em) {
+  .header {
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+}
+@media (max-width: 56.25em) {
+  .header {
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+}
+@media (max-width: 37.5em) {
+  .header {
+    height: 110vh;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+}
 .header__logo-box {
   position: absolute;
-  left: 50rem;
-  top: 4rem;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, 0%);
 }
 .header__logo {
   height: 18rem;
+}
+@media (max-width: 75em) {
+  .header__logo {
+    height: 16rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .header__logo {
+    height: 14rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .header__logo {
+    height: 12rem;
+  }
 }
 .header__text-box {
   color: #333;
   text-align: center;
   padding-top: 25rem;
+}
+@media (max-width: 75em) {
+  .header__text-box {
+    padding-top: 30rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .header__text-box {
+    padding-top: 35rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .header__text-box {
+    padding-top: 40rem;
+  }
+}
+
+.businesscard {
+  background-color: #fff;
+  height: 21rem;
+  width: 21rem;
+  position: fixed;
+  top: 9%;
+  left: 4%;
+  border-radius: 50%;
+  z-index: 900;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 5rem 0;
 }
 
 .navigation__checkbox {
@@ -638,25 +706,13 @@ body {
   padding: 7rem 0;
 }
 
-.businesscard {
-  background-color: #fff;
-  height: 21rem;
-  width: 21rem;
-  position: fixed;
-  top: 6rem;
-  left: 6rem;
-  border-radius: 50%;
-  z-index: 3000;
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 5rem 0;
-}
-.businesscard a:link,
-.businesscard a:visited {
+a:link,
+a:visited {
   text-decoration: none;
   color: #1098ad;
 }
-.businesscard a:hover {
+
+a:hover {
   color: orangered;
   text-decoration: underline orangered;
 }

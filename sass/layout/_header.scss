@@ -13,24 +13,73 @@
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 
+  @include respond(tab-land) {
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+
+  @include respond(tab-port) {
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+
+  @include respond(phone) {
+    height: 110vh;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+
   &__logo-box {
     position: absolute;
-    left: 50rem;
-    top: 4rem;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, 0%);
   }
 
   &__logo {
     height: 18rem;
+
+    @include respond(tab-land) {
+      height: 16rem;
+    }
+
+    @include respond(tab-port) {
+      height: 14rem;
+    }
+
+    @include respond(phone) {
+      height: 12rem;
+    }
   }
 
   &__text-box {
-    // position: absolute;
-    // left: 50%;
-    // top: 40%;
-    // transform: translate(-50%, -50%);
     color: $color-grey-dark-3;
     text-align: center;
     padding-top: 25rem;
-    // max-width: 80%;
+
+    @include respond(tab-land) {
+      padding-top: 30rem;
+    }
+
+    @include respond(tab-port) {
+      padding-top: 35rem;
+    }
+
+    @include respond(phone) {
+      padding-top: 40rem;
+    }
   }
+}
+
+.businesscard {
+  background-color: $color-white;
+  height: 21rem;
+  width: 21rem;
+  position: fixed;
+  top: 9%;
+  left: 4%;
+  border-radius: 50%;
+  z-index: 900;
+  box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+  text-align: center;
+  padding: 5rem 0;
 }
