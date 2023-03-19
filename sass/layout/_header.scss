@@ -15,17 +15,17 @@
 
   @include respond(tab-land) {
     height: 100vh;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   }
 
   @include respond(tab-port) {
     height: 100vh;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   }
 
   @include respond(phone) {
-    height: 110vh;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    height: 134vh;
+    clip-path: polygon(0 0, 100% 0, 100% 115vh, 0 100%);
   }
 
   &__logo-box {
@@ -60,12 +60,12 @@
       padding-top: 30rem;
     }
 
-    @include respond(tab-port) {
-      padding-top: 35rem;
-    }
+    // @include respond(tab-port) {
+    //   padding-top: 40rem;
+    // }
 
     @include respond(phone) {
-      padding-top: 40rem;
+      padding-top: 50rem;
     }
   }
 }
@@ -82,4 +82,19 @@
   box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
   text-align: center;
   padding: 5rem 0;
+
+  @include respond(tab-land) {
+    top: 6%;
+    left: 3%;
+  }
+
+  @include respond(tab-port) {
+    top: 5%;
+    left: 2%;
+  }
+
+  @include respond(phone) {
+    top: 15%;
+    left: 1%;
+  }
 }

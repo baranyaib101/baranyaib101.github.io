@@ -3,6 +3,17 @@
   padding-top: 17rem;
   margin-top: -20vh;
 
+  .rolam {
+    @include respond(tab-port) {
+      width: 75%;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      padding-bottom: 5rem;
+    }
+  }
+
   .img-izu {
     position: relative;
 
@@ -12,6 +23,14 @@
       left: 18rem;
       top: 0;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+      @include respond(tab-port) {
+        width: 25%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+      }
     }
   }
 }
@@ -20,16 +39,6 @@
   height: 105vh;
   max-width: 100%;
   background-color: $color-grey-light-1;
-  // background-image: linear-gradient(
-  //     rgba($color-light-blue, 0.8),
-  //     rgba($color-light-blue, 0.8)
-  //   ),
-  //   url("../img/stones-g93c526508_1920.jpg");
-
-  // background-size: cover;
-  // background-position: top;
-  // transform: skewY(-7deg);
-  // margin-top: -18rem;
   color: $color-white;
   padding-top: 5rem;
 
