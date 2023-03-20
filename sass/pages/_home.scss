@@ -158,6 +158,14 @@
       left: 10rem;
       top: 0;
       box-shadow: 0 1rem 2rem rgba($color-dark-orange, 0.2);
+
+      @include respond(tab-port) {
+        width: 40%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+      }
     }
   }
 }
@@ -179,12 +187,20 @@
   & > * {
     transform: skewY(7deg);
   }
+
+  @include respond(phone) {
+    height: 235vh;
+  }
 }
 
 .nyelvlokes-text {
   color: $color-grey-light-1;
   font-size: $default-font-size * 1.1;
   padding: 1rem 20rem;
+
+  @include respond(phone) {
+    padding: 1rem 5rem;
+  }
 }
 
 .nyelvlokes-head-text {
@@ -192,6 +208,10 @@
   font-size: $default-font-size * 1.5;
   background-color: $color-dark-purple;
   padding: 3rem 20rem;
+
+  @include respond(phone) {
+    padding: 1rem 5rem;
+  }
 }
 
 .nyelvlokes-area {
@@ -209,6 +229,15 @@
     position: absolute;
     left: 15rem;
     top: 11rem;
+
+    @include respond(phone) {
+      // left: 1rem;
+      // top: 11rem;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+    }
   }
 
   &-2 {
@@ -218,6 +247,16 @@
     position: absolute;
     left: 70rem;
     top: 14rem;
+
+    @include respond(phone) {
+      // left: 44rem;
+      // top: 14rem;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      margin-top: -12%;
+    }
   }
 
   &-3 {
@@ -227,6 +266,16 @@
     position: absolute;
     left: 43rem;
     top: -4rem;
+
+    @include respond(phone) {
+      // left: 22rem;
+      // top: -2rem;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      margin-top: -12%;
+    }
   }
 
   &-4 {
@@ -236,6 +285,16 @@
     position: absolute;
     left: 40rem;
     top: 23rem;
+
+    @include respond(phone) {
+      // left: 22rem;
+      // top: 26rem;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      margin-top: -12%;
+    }
   }
 }
 
@@ -272,6 +331,14 @@
       left: 10rem;
       top: 0;
       box-shadow: 0 1rem 2rem rgba($color-dark-red, 0.2);
+
+      @include respond(tab-port) {
+        width: 40%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+      }
     }
   }
 }

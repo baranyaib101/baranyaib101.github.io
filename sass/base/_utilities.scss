@@ -40,4 +40,8 @@
 
 .u-margin-top-very-huge {
   margin-top: 60rem !important;
+
+  @include respond(phone) {
+    margin-top: 0rem !important;
+  }
 }
