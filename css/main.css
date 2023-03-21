@@ -708,11 +708,8 @@ body {
 @media only screen and (max-width: 56.25em) {
   .section-about .rolam {
     width: 75%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
     padding-bottom: 5rem;
+    margin: 0 auto;
   }
 }
 .section-about .img-izu {
@@ -720,18 +717,13 @@ body {
 }
 .section-about .img-izu .izuka {
   width: 40%;
-  position: absolute;
-  left: 18rem;
-  top: 0;
+  display: block;
+  margin: 0 auto;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 56.25em) {
   .section-about .img-izu .izuka {
     width: 25%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
   }
 }
 
@@ -820,8 +812,36 @@ body {
   padding: 10rem 0;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
+@media only screen and (max-width: 56.25em) {
+  .section-logopedia {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .section-logopedia .logo-text1 {
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .section-logopedia .logo-text2 {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
 .section-logopedia .paragraph {
   padding-right: 5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-logopedia .paragraph {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .section-logopedia .top {
+    display: none;
+  }
 }
 .section-logopedia .img-kislany .kislany {
   width: 90%;
@@ -832,15 +852,23 @@ body {
 @media only screen and (max-width: 56.25em) {
   .section-logopedia .img-kislany .kislany {
     width: 40%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.section-logopedia .bottom {
+  display: none;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-logopedia .bottom {
+    display: contents;
+  }
+  .section-logopedia .bottom .img-kislany {
+    margin-bottom: 10rem;
   }
 }
 
 .section-nyelvlokes {
-  height: 210vh;
   max-width: 100%;
   padding: 10rem 0;
   background-image: linear-gradient(to right bottom, rgba(170, 80, 168, 0.5), rgba(137, 20, 119, 0.5)), url(../img/sea-stones-g33b8e1112_1920.jpg);
@@ -850,11 +878,6 @@ body {
 }
 .section-nyelvlokes > * {
   transform: skewY(7deg);
-}
-@media only screen and (max-width: 37.5em) {
-  .section-nyelvlokes {
-    height: 235vh;
-  }
 }
 
 .nyelvlokes-text {
