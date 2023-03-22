@@ -138,6 +138,8 @@
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
+    pointer-events: auto;
+    visibility: visible;
   }
 
   //ICON

@@ -629,6 +629,8 @@ body {
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
   width: 100%;
+  pointer-events: auto;
+  visibility: visible;
 }
 .navigation__icon {
   position: relative;
@@ -791,6 +793,8 @@ body {
 .businesscard__checkbox:checked ~ .businesscard__nav {
   opacity: 1;
   width: 100%;
+  pointer-events: auto;
+  visibility: visible;
 }
 .businesscard__icon {
   position: relative;
