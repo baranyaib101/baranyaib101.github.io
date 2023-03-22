@@ -515,38 +515,6 @@ body {
   }
 }
 
-.businesscard {
-  background-color: #fff;
-  height: 21rem;
-  width: 21rem;
-  position: fixed;
-  top: 9%;
-  left: 4%;
-  border-radius: 50%;
-  z-index: 900;
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 5rem 0;
-}
-@media only screen and (max-width: 75em) {
-  .businesscard {
-    top: 6%;
-    left: 3%;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .businesscard {
-    top: 5%;
-    left: 2%;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .businesscard {
-    top: 3%;
-    left: 1%;
-  }
-}
-
 .navigation__checkbox {
   display: none;
 }
@@ -618,6 +586,8 @@ body {
   z-index: 1500;
   opacity: 0;
   width: 0;
+  pointer-events: none;
+  visibility: hidden;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .navigation__list {
@@ -698,6 +668,133 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg);
+}
+
+.businesscard__checkbox {
+  display: none;
+}
+.businesscard__button {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  left: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+@media only screen and (max-width: 75em) {
+  .businesscard__button {
+    top: 5rem;
+    left: 5rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .businesscard__button {
+    top: 4rem;
+    left: 4rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .businesscard__button {
+    top: 3rem;
+    left: 3rem;
+  }
+}
+.businesscard__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  left: 6.5rem;
+  background-image: radial-gradient(#ffb900, #ff7730);
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+@media only screen and (max-width: 75em) {
+  .businesscard__background {
+    top: 5.5rem;
+    left: 5.5rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .businesscard__background {
+    top: 4.4rem;
+    left: 4.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .businesscard__background {
+    top: 3.5rem;
+    left: 3.5rem;
+  }
+}
+.businesscard__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.businesscard__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+.businesscard__list .iza {
+  font-size: 6.4rem;
+  margin-bottom: 10rem;
+  color: #f7f7f7;
+}
+.businesscard .icon-big {
+  font-size: 3rem;
+}
+.businesscard__item {
+  margin: 1rem;
+}
+.businesscard__link:link, .businesscard__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 220%;
+  transition: all 0.4s;
+}
+.businesscard__link:link span, .businesscard__link:visited span {
+  margin-right: 1.5rem;
+  display: inline-block;
+}
+.businesscard__link:hover, .businesscard__link:active {
+  background-position: 100%;
+  color: #ffb900;
+  transform: translateX(1rem);
+}
+.businesscard__checkbox:checked ~ .businesscard__background {
+  transform: scale(80);
+}
+.businesscard__checkbox:checked ~ .businesscard__nav {
+  opacity: 1;
+  width: 100%;
+}
+.businesscard__icon {
+  position: relative;
+  margin-top: 2rem;
 }
 
 .section-about {
