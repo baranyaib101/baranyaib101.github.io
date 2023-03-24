@@ -24,82 +24,54 @@
   </head>
   <body>
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-
-      <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
-
-      <div class="navigation__background">&nbsp;</div>
-
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#magamrol" class="navigation__link"
-              ><span>01</span>Magamról</a
-            >
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-item">
+            <a href="#magamrol" class="main-nav-link">Magamról</a>
           </li>
-          <li class="navigation__item">
-            <a href="#timondtatok" class="navigation__link"
-              ><span>02</span>Ti mondtátok</a
-            >
+          <li class="main-nav-item">
+            <a href="#timondtatok" class="main-nav-link">Ti mondtátok</a>
           </li>
-          <li class="navigation__item">
-            <a href="#logopedia" class="navigation__link"
-              ><span>03</span>Logopédia</a
-            >
+          <li class="main-nav-item">
+            <a href="#logopedia" class="main-nav-link">Logopédia</a>
           </li>
-          <li class="navigation__item">
-            <a href="#nyelvlokes" class="navigation__link"
-              ><span>04</span>Nyelvlökéses nyelés</a
-            >
+          <li class="main-nav-item">
+            <a href="#nyelvlokes" class="main-nav-link">Nyelvlökéses nyelés</a>
           </li>
-          <li class="navigation__item">
-            <a href="#tulerzekeny" class="navigation__link"
-              ><span>05</span>Túlérzékeny hallás</a
-            >
+          <li class="main-nav-item">
+            <a href="#tulerzekeny" class="main-nav-link">Túlérzékeny hallás</a>
           </li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </div>
     <div class="businesscard">
-      <input type="checkbox" class="businesscard__checkbox" id="bc-toggle" />
-
-      <label for="bc-toggle" class="businesscard__button">
-        <div class="businesscard__icon">
-          <span
-            ><ion-icon name="call-outline" class="icon-big"></ion-icon
-          ></span>
-          <span
-            ><ion-icon name="mail-outline" class="icon-big"></ion-icon
-          ></span>
-        </div>
-      </label>
-
-      <div class="businesscard__background">&nbsp;</div>
-
-      <nav class="businesscard__nav">
-        <ul class="businesscard__list">
-          <li class="businesscard__item iza">
+      <nav class="businesscard-nav">
+        <ul class="businesscard-list">
+          <li class="businesscard-item iza">
             <span><strong>VARGA IZABELL</strong></span>
           </li>
-          <li class="businesscard__item">
+          <li class="businesscard-item">
             <div class="tel">
               <ion-icon name="call-outline" class="icon-big"></ion-icon>
               <span
-                ><a href="tel:+36 20 9614974" class="businesscard__link"
+                ><a href="tel:+36 20 9614974" class="businesscard-link"
                   >+36 20 9614974</a
                 ></span
               >
             </div>
           </li>
-          <li class="businesscard__item">
+          <li class="businesscard-item">
             <div class="email">
               <ion-icon name="mail-outline" class="icon-big"></ion-icon>
               <span
                 ><a
                   href="mailto:iza.napsugi@gmail.com"
-                  class="businesscard__link"
+                  class="businesscard-link"
                   >iza.napsugi@gmail.com</a
                 ></span
               >
@@ -107,6 +79,11 @@
           </li>
         </ul>
       </nav>
+      <button class="btn-mobile-bc">
+        <ion-icon class="icon-mobile-bc" name="call-outline"></ion-icon>
+        <ion-icon class="icon-mobile-bc" name="mail-outline"></ion-icon>
+        <ion-icon class="icon-mobile-bc" name="close-outline"></ion-icon>
+      </button>
     </div>
     <!-- <div class="businesscard-old">
       <div class="nev"><strong> Varga Izabell</strong></div>
