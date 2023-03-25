@@ -64,7 +64,11 @@
     }
 
     @include respond(phone) {
-      padding-top: 15rem;
+      padding-top: 10rem;
+    }
+
+    @include respond(phone) {
+      padding-top: 10rem;
     }
   }
 }

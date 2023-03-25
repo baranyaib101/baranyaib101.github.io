@@ -38,6 +38,13 @@ body {
       letter-spacing: 0.95rem;
       padding-bottom: 2rem;
     }
+
+    @include respond(phone-s) {
+      font-size: 5rem;
+      font-weight: 700;
+      letter-spacing: 0.9rem;
+      padding-bottom: 2rem;
+    }
   }
 
   &--sub {
