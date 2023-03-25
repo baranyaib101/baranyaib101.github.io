@@ -3,36 +3,30 @@
   padding-top: 17rem;
   margin-top: -20vh;
 
-  .rolam {
+  .rowflex {
+    max-width: $grid-width;
+    margin: 0 auto;
+    display: flex;
+    column-gap: $gutter-vertical * 2;
+    justify-content: space-between;
     @include respond(tab-port) {
-      width: 75%;
-      padding-bottom: 5rem;
-      margin: 0 auto;
+      column-gap: $gutter-vertical-small;
     }
-  }
-
-  .img-izu {
-    position: relative;
 
     .izuka {
-      width: 40%;
       display: block;
-      margin: 0 auto;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-
-      @include respond(tab-port) {
-        width: 25%;
-      }
     }
   }
 }
 
 .section-about2 {
-  height: 105vh;
-  max-width: 100%;
+  // height: 105vh;
+  // max-width: 100%;
   background-color: $color-grey-light-1;
   color: $color-white;
   padding-top: 5rem;
+  padding-bottom: 5rem;
 
   .feature-box {
     max-width: $grid-width;
@@ -368,11 +362,11 @@ a:hover {
   text-decoration: underline orangered;
 }
 
-.tel,
-.email {
-  font-size: $default-font-size;
-}
+// .tel,
+// .email {
+//   font-size: $default-font-size;
+// }
 
-.nev {
-  font-size: $default-font-size * 1.5;
-}
+// .nev {
+//   font-size: $default-font-size * 1.5;
+// }

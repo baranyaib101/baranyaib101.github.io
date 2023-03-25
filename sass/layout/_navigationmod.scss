@@ -18,6 +18,21 @@
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+
+  @include respond(tab-land) {
+    top: 5rem;
+    right: 5rem;
+  }
+
+  @include respond(tab-port) {
+    top: 4rem;
+    right: 4rem;
+  }
+
+  @include respond(phone) {
+    top: 3rem;
+    right: 3rem;
+  }
 }
 
 .icon-mobile-nav {
@@ -85,12 +100,10 @@
 
 .main-nav-link:link,
 .main-nav-link:visited {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: $color-dark-orange;
-  // display: inline-block;
   font-weight: 300;
   padding: 1rem 2rem;
-  // color: $color-white;
   text-decoration: none;
   text-transform: uppercase;
   background-image: linear-gradient(
