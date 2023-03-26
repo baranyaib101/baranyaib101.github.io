@@ -71,7 +71,7 @@ body {
 }
 @media only screen and (max-width: 75em) {
   body {
-    padding: 0;
+    padding: 0.5rem;
   }
 }
 
@@ -212,6 +212,11 @@ body {
     margin-bottom: 0.5rem !important;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .u-margin-bottom-small {
+    margin-bottom: 0.5rem !important;
+  }
+}
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
@@ -221,6 +226,11 @@ body {
     margin-bottom: 2rem !important;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .u-margin-bottom-medium {
+    margin-bottom: 1rem !important;
+  }
+}
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
@@ -228,6 +238,11 @@ body {
 @media only screen and (max-width: 56.25em) {
   .u-margin-bottom-big {
     margin-bottom: 4rem !important;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .u-margin-bottom-big {
+    margin-bottom: 2rem !important;
   }
 }
 
@@ -439,19 +454,19 @@ body {
 }
 @media only screen and (max-width: 75em) {
   .header {
-    height: 100vh;
+    height: 98vh;
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   }
 }
 @media only screen and (max-width: 56.25em) {
   .header {
-    height: 100vh;
+    height: 98vh;
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   }
 }
 @media only screen and (max-width: 37.5em) {
   .header {
-    height: 100vh;
+    height: 98vh;
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   }
 }
@@ -802,8 +817,8 @@ body {
   background-image: linear-gradient(rgba(126, 213, 111, 0.6), rgba(126, 213, 111, 0.6)), url("../img/stones-g59bf854f1_1920.jpg");
   background-size: cover;
   background-position: top;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 .section-quotes .rowflexq {
   max-width: 114rem;

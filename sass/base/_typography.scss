@@ -54,10 +54,6 @@ body {
     animation: moveFromRight;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-
-    // @include respond(phone-s) {
-    //   font-size: 1.5rem;
-    // }
   }
 }
 
@@ -70,55 +66,35 @@ body {
 }
 
 .hs-color-blue {
-  background-image: linear-gradient(
-    to right,
-    $color-light-blue,
-    $color-dark-blue
-  );
+  background-image: linear-gradient(to right, $color-light-blue, $color-dark-blue);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .hs-color-green {
-  background-image: linear-gradient(
-    to right,
-    $color-light-green,
-    $color-dark-green
-  );
+  background-image: linear-gradient(to right, $color-light-green, $color-dark-green);
   -webkit-background-clip: text;
   background-clip: text;
   color: $color-grey-light-1;
 }
 
 .hs-color-orange {
-  background-image: linear-gradient(
-    to right,
-    $color-light-orange,
-    $color-dark-orange
-  );
+  background-image: linear-gradient(to right, $color-light-orange, $color-dark-orange);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .hs-color-red {
-  background-image: linear-gradient(
-    to right,
-    $color-light-red,
-    $color-dark-red
-  );
+  background-image: linear-gradient(to right, $color-light-red, $color-dark-red);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .hs-color-purple {
-  background-image: linear-gradient(
-    to right,
-    $color-light-purple,
-    $color-dark-purple
-  );
+  background-image: linear-gradient(to right, $color-light-purple, $color-dark-purple);
   -webkit-background-clip: text;
   background-clip: text;
   color: $color-grey-light-1;
