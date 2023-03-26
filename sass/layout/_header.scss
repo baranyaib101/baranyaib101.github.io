@@ -1,10 +1,7 @@
 .header {
   height: 95vh;
   max-width: 100%;
-  background-image: linear-gradient(
-      rgba($color-white, 0.6),
-      rgba($color-white, 0.6)
-    ),
+  background-image: linear-gradient(rgba($color-white, 0.6), rgba($color-white, 0.6)),
     url("../img/stones-g93c526508_1920.jpg");
   // url("../img/pebble-g422b4f62b_1920.jpg");
 
@@ -72,32 +69,3 @@
     }
   }
 }
-
-// .businesscard-old {
-//   background-color: $color-white;
-//   height: 21rem;
-//   width: 21rem;
-//   position: fixed;
-//   top: 9%;
-//   left: 4%;
-//   border-radius: 50%;
-//   z-index: 900;
-//   box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
-//   text-align: center;
-//   padding: 5rem 0;
-
-//   @include respond(tab-land) {
-//     top: 6%;
-//     left: 3%;
-//   }
-
-//   @include respond(tab-port) {
-//     top: 5%;
-//     left: 2%;
-//   }
-
-//   @include respond(phone) {
-//     top: 3%;
-//     left: 1%;
-//   }
-// }

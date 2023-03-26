@@ -264,7 +264,7 @@ body {
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.6rem;
+  font-size: 1.28rem;
   border: none;
   cursor: pointer;
 }
@@ -280,13 +280,6 @@ body {
   outline: none;
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-.btn--white {
-  background-color: #fff;
-  color: #777;
-}
-.btn--white::after {
-  background-color: #fff;
 }
 .btn--green {
   background-color: #7ed56f;
@@ -310,26 +303,6 @@ body {
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
-}
-
-.btn-text:link, .btn-text:visited {
-  font-size: 1.6rem;
-  color: #7ed56f;
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 1px solid #7ed56f;
-  padding: 3px;
-  transition: all 0.2s;
-}
-.btn-text:hover {
-  background-color: #7ed56f;
-  color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-}
-.btn-text:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0);
 }
 
 .popup-quote {
@@ -832,45 +805,47 @@ body {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-
-.quote {
+.section-quotes .rowflexq {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.section-quotes .quote {
   max-width: 100%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.15);
   background-color: rgba(255, 255, 255, 0.6);
   padding: 4rem;
-  height: 23rem;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 1.5rem;
 }
-.quote-figure {
-  width: 15rem;
-  height: 15rem;
-  float: left;
-  -webkit-shape-outside: circle(50% at 50% 50%);
-  shape-outside: circle(50% at 50% 50%);
+.section-quotes .quote-figure {
+  width: 11rem;
+  height: 11rem;
   -webkit-clip-path: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
-  transform: translateX(-3rem);
   position: relative;
   background-size: cover;
   background-position: top;
 }
-.quote-caption {
+.section-quotes .quote-caption {
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, 20%);
   text-transform: uppercase;
-  font-size: 2.08rem;
+  font-size: 1.76rem;
   text-align: center;
   color: #fff;
 }
-.quote-text {
-  font-size: 1.36rem;
-  padding-top: 1rem;
-  padding-bottom: 3rem;
+.section-quotes .quote-text {
+  font-size: 1.44rem;
+  padding-bottom: 1rem;
   color: #333;
 }
-.quote_img {
+.section-quotes .quote_img {
   height: 100%;
   filter: blur(2px) brightness(70%);
 }
