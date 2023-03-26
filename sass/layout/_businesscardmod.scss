@@ -58,7 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.8s ease-in;
+  transition: all 0.5s ease-in;
 
   /* Hide navigation */
   /* Allows NO transitions at all */
@@ -110,12 +110,7 @@
   padding: 1rem 2rem;
   text-decoration: none;
   // text-transform: uppercase;
-  background-image: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 50%,
-    $color-light-orange 50%
-  );
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-light-orange 50%);
   background-size: 220%;
   transition: all 0.4s;
 }

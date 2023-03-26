@@ -9,12 +9,24 @@
     display: flex;
     column-gap: $gutter-vertical * 2;
     justify-content: space-between;
+
+    .rolam {
+      padding: 0 2rem;
+    }
+
     @include respond(tab-port) {
-      column-gap: $gutter-vertical-small;
+      column-gap: $gutter-vertical;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+      column-gap: 0;
+      row-gap: $gutter-horizontal-small;
+      align-items: center;
     }
 
     .izuka {
-      display: block;
+      // display: block;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
     }
   }
@@ -92,13 +104,19 @@
     }
     &-caption {
       position: absolute;
-      top: 30%;
+      top: 10%;
       left: 50%;
       transform: translate(-50%, 20%);
       text-transform: uppercase;
       font-size: $default-font-size * 1.1;
       text-align: center;
       color: $color-white;
+
+      .qdate {
+        font-size: $default-font-size/1.3;
+        text-transform: lowercase;
+        font-style: italic;
+      }
     }
     &-text {
       font-size: $default-font-size * 0.9;
@@ -115,73 +133,59 @@
 
 .section-logopedia {
   background-color: $color-grey-light-1;
-  padding: 10rem 0;
+  padding: 5rem 0 15rem 0;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+  .rowflexlogo {
+    max-width: $grid-width;
+    margin: 5rem auto;
+    display: flex;
+    column-gap: $gutter-vertical * 2;
+    // justify-content: center;
+    align-items: flex-start;
+
+    @include respond(tab-port) {
+      column-gap: $gutter-vertical;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+      column-gap: 0;
+      row-gap: $gutter-horizontal-small;
+      align-items: center;
+    }
+  }
 
   @include respond(tab-port) {
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   }
 
-  .logo-text1 {
-    @include respond(tab-port) {
-      width: 75%;
-      margin: 0 auto;
-      padding-bottom: 5rem;
-    }
-  }
-
-  .logo-text2 {
-    @include respond(tab-port) {
-      width: 75%;
-      margin: 0 auto;
+  .logo-text {
+    @include respond(phone) {
+      padding-bottom: 3rem;
     }
   }
 
   .paragraph {
-    padding-right: 5rem;
     @include respond(tab-port) {
       padding-right: 0;
     }
   }
 
-  .top {
-    @include respond(tab-port) {
-      display: none;
+  .img-kislany2 {
+    @include respond(phone) {
+      order: 1;
     }
   }
 
-  .img-kislany {
-    .kislany {
-      width: 90%;
-      // position: absolute;
-      left: 10rem;
-      top: 0;
-      box-shadow: 0 1rem 2rem rgba($color-dark-orange, 0.2);
-
-      @include respond(tab-port) {
-        width: 40%;
-        display: block;
-        margin: 0 auto;
-      }
-    }
-  }
-
-  .bottom {
-    display: none;
-
-    @include respond(tab-port) {
-      display: contents;
-
-      .img-kislany {
-        margin-bottom: 10rem;
-      }
-    }
+  .kislany {
+    width: 40rem;
+    box-shadow: 0 1rem 2rem rgba($color-dark-orange, 0.2);
   }
 }
 
 .section-nyelvlokes {
-  // height: 210vh;
-  max-width: 100%;
+  // max-width: 100%;
   padding: 10rem 0;
   background-image: linear-gradient(to right bottom, rgba($color-light-purple, 0.5), rgba($color-dark-purple, 0.5)),
     url(../img/sea-stones-g33b8e1112_1920.jpg);
@@ -217,6 +221,8 @@
 
 .nyelvlokes-area {
   position: relative;
+  max-width: $grid-width;
+  margin: 0 auto;
 }
 
 .nyelvlokes-gomb {
@@ -309,10 +315,48 @@
 .section-tulerzekeny {
   background-color: $color-grey-light-1;
   margin-top: -10rem;
-  padding: 20rem 0 10rem 0;
+  padding: 20rem 0 1rem 0;
+
+  .rowflextul {
+    max-width: $grid-width;
+    margin: 5rem auto;
+    display: flex;
+    column-gap: $gutter-vertical * 2;
+    align-items: flex-start;
+
+    @include respond(tab-port) {
+      column-gap: $gutter-vertical;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+      column-gap: 0;
+      row-gap: $gutter-horizontal-small;
+      align-items: center;
+    }
+  }
+
+  .tul-text {
+    @include respond(phone) {
+      padding-bottom: 3rem;
+    }
+  }
 
   .paragraph {
-    padding-right: 5rem;
+    @include respond(tab-port) {
+      padding-right: 0;
+    }
+  }
+
+  .img-kisgyerek2 {
+    @include respond(phone) {
+      order: 1;
+    }
+  }
+
+  .kisgyerek {
+    width: 40rem;
+    box-shadow: 0 1rem 2rem rgba($color-dark-orange, 0.2);
   }
 
   a:link,
@@ -325,32 +369,12 @@
     color: $color-light-red;
     text-decoration: underline $color-light-red;
   }
-
-  .img-kisgyerek {
-    // position: relative;
-
-    .kisgyerek {
-      width: 90%;
-      // position: absolute;
-      left: 10rem;
-      top: 0;
-      box-shadow: 0 1rem 2rem rgba($color-dark-red, 0.2);
-
-      @include respond(tab-port) {
-        width: 40%;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 0;
-      }
-    }
-  }
 }
 
 .copyright {
-  height: 15rem;
+  height: 10rem;
   background-color: $color-grey-dark-3;
   color: $color-grey-light-1;
   text-align: center;
-  padding: 7rem 0;
+  padding: 3.5rem 0;
 }
