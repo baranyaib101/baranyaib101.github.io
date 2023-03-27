@@ -71,7 +71,7 @@ body {
 }
 @media only screen and (max-width: 75em) {
   body {
-    padding: 0.5rem;
+    padding: 1rem;
   }
 }
 
@@ -800,6 +800,14 @@ body {
   display: flex;
   column-gap: 1.5rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .section-quotes .rowflexq .quote {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 1rem;
+    align-items: center;
+  }
+}
 .section-quotes .rowflexq .quote-figure {
   width: 35rem;
   height: 10rem;
@@ -811,6 +819,12 @@ body {
   justify-content: center;
   align-items: center;
   color: #333;
+}
+@media only screen and (max-width: 37.5em) {
+  .section-quotes .rowflexq .quote-figure {
+    width: 11rem;
+    height: 11rem;
+  }
 }
 .section-quotes .rowflexq .quote .qtext {
   display: flex;

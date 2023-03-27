@@ -29,6 +29,6 @@ body {
   padding: 3rem;
   overflow-x: hidden;
   @include respond(tab-land) {
-    padding: 0.5rem;
+    padding: 1rem;
   }
 }

@@ -7,7 +7,7 @@
     max-width: $grid-width;
     margin: 0 auto;
     display: flex;
-    column-gap: $gutter-vertical * 2;
+    column-gap: calc($gutter-vertical * 2);
     justify-content: space-between;
 
     .rolam {
@@ -87,6 +87,13 @@
       display: flex;
       column-gap: 1.5rem;
 
+      @include respond(phone) {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: calc($gutter-horizontal-small/2);
+        align-items: center;
+      }
+
       &-figure {
         width: 35rem;
         height: 10rem;
@@ -99,6 +106,11 @@
         justify-content: center;
         align-items: center;
         color: $color-grey-dark-3;
+
+        @include respond(phone) {
+          width: 11rem;
+          height: 11rem;
+        }
       }
 
       .qtext {
@@ -197,7 +209,7 @@
 
 .nyelvlokes-text {
   color: $color-grey-light-1;
-  font-size: $default-font-size * 1.1;
+  font-size: calc($default-font-size * 1.1);
   padding: 1rem 20rem;
 
   @include respond(phone) {
@@ -207,7 +219,7 @@
 
 .nyelvlokes-head-text {
   color: $color-grey-light-1;
-  font-size: $default-font-size * 1.5;
+  font-size: calc($default-font-size * 1.5);
   background-color: $color-dark-purple;
   padding: 3rem 20rem;
 
@@ -318,7 +330,7 @@
     max-width: $grid-width;
     margin: 5rem auto;
     display: flex;
-    column-gap: $gutter-vertical * 2;
+    column-gap: calc($gutter-vertical * 2);
     align-items: flex-start;
 
     @include respond(tab-port) {
