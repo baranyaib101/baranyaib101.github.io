@@ -1,4 +1,4 @@
-.popup-quote {
+.popup {
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -10,57 +10,83 @@
   visibility: hidden;
   transition: all 0.3s;
 
-  &__content {
+  &-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    width: 75%;
+    width: 90%;
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
     border-radius: 3px;
-    display: table;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s;
   }
 
-  &__left {
+  &-sec {
+    display: flex;
+    align-items: flex-start;
+
+    @include respond(phone) {
+      flex-direction: column;
+      column-gap: 0;
+      row-gap: $gutter-horizontal-small;
+      align-items: center;
+    }
+  }
+
+  &-left {
     width: 33.333333%;
     display: table-cell;
     vertical-align: middle;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
-  &__right {
+  &-right {
     width: 66.6666667%;
     display: table-cell;
     vertical-align: middle;
-    padding: 3rem 5rem;
+    padding: 0rem 5rem;
+
+    @include respond(phone) {
+      width: 100%;
+      padding: 0rem 2rem;
+    }
   }
 
-  &__img {
+  &-img {
     display: block;
     width: 100%;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+
+    @include respond(phone) {
+      width: 40%;
+    }
+    // @include respond(phone-s) {
+    //   width: 30%;
+    // }
   }
 
-  &__text {
-    font-size: 1.4rem;
+  &-text {
+    font-size: calc($default-font-size * 0.9);
     margin-bottom: 4rem;
-
-    -moz-column-count: 2;
-    -moz-column-gap: 4rem; //1em = 14px;
-    -moz-column-rule: 1px solid $color-grey-light-2;
-
     column-count: 2;
     column-gap: 4rem; //1em = 14px;
     column-rule: 1px solid $color-grey-light-2;
 
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
+    @include respond(phone) {
+      column-gap: 2rem;
+      font-size: calc($default-font-size * 0.8);
+    }
   }
 
   //Open states
@@ -69,12 +95,12 @@
     visibility: visible;
   }
 
-  &:target &__content {
+  &:target &-content {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
   }
 
-  &__close {
+  &-close {
     &:link,
     &:visited {
       color: $color-grey-dark;
