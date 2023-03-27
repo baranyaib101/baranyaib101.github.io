@@ -791,49 +791,46 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
-.section-quotes .quote {
-  max-width: 100%;
-  margin: 0 auto;
+.section-quotes .rowflexq .quote {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.15);
   background-color: rgba(255, 255, 255, 0.6);
-  padding: 4rem;
+  padding: 2rem;
   display: flex;
-  align-items: flex-start;
   column-gap: 1.5rem;
 }
-.section-quotes .quote-figure {
-  width: 11rem;
-  height: 11rem;
-  -webkit-clip-path: circle(50% at 50% 50%);
-  clip-path: circle(50% at 50% 50%);
-  position: relative;
-  background-size: cover;
+.section-quotes .rowflexq .quote-figure {
+  width: 35rem;
+  height: 10rem;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/img/stones-g59bf854f1_1920.jpg-verysmall.jpg");
+  clip-path: circle(45% at 50% 50%);
   background-position: top;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
 }
-.section-quotes .quote-caption {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, 20%);
+.section-quotes .rowflexq .quote .qtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-quotes .rowflexq .quote .qcaption {
   text-transform: uppercase;
-  font-size: 1.76rem;
-  text-align: center;
-  color: #fff;
+  font-weight: 700;
 }
-.section-quotes .quote-caption .qdate {
+.section-quotes .rowflexq .quote .qdate {
   font-size: 1.2307692308rem;
   text-transform: lowercase;
   font-style: italic;
 }
-.section-quotes .quote-text {
+.section-quotes .rowflexq .quote-text {
   font-size: 1.44rem;
   padding-bottom: 1rem;
   color: #333;
-}
-.section-quotes .quote_img {
-  height: 100%;
-  filter: blur(2px) brightness(70%);
 }
 
 .section-logopedia {
