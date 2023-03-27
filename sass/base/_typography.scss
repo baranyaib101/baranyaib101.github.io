@@ -116,7 +116,7 @@ body {
 }
 
 .paragraph-large {
-  font-size: $default-font-size * 1.1;
+  font-size: calc($default-font-size * 1.1);
 
   // @include respond(tab-port) {
   //   font-size: $default-font-size;
