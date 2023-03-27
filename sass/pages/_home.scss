@@ -118,12 +118,14 @@
         font-style: italic;
       }
     }
+
     &-text {
       font-size: $default-font-size * 0.9;
       // padding-top: 1rem;
       padding-bottom: 1rem;
       color: $color-grey-dark-3;
     }
+
     &_img {
       height: 100%;
       filter: blur(2px) brightness(70%);
