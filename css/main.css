@@ -932,6 +932,11 @@ body {
   width: 40rem;
   box-shadow: 0 1rem 2rem rgba(255, 119, 48, 0.2);
 }
+@media only screen and (max-width: 37.5em) {
+  .section-logopedia .kislany {
+    width: 30rem;
+  }
+}
 
 .section-nyelvlokes {
   padding: 10rem 0;
@@ -1104,6 +1109,11 @@ body {
 .section-tulerzekeny .kisgyerek {
   width: 40rem;
   box-shadow: 0 1rem 2rem rgba(255, 119, 48, 0.2);
+}
+@media only screen and (max-width: 37.5em) {
+  .section-tulerzekeny .kisgyerek {
+    width: 30rem;
+  }
 }
 .section-tulerzekeny a:link,
 .section-tulerzekeny a:visited {

@@ -190,6 +190,10 @@
   .kislany {
     width: 40rem;
     box-shadow: 0 1rem 2rem rgba($color-dark-orange, 0.2);
+
+    @include respond(phone) {
+      width: 30rem;
+    }
   }
 }
 
@@ -366,6 +370,10 @@
   .kisgyerek {
     width: 40rem;
     box-shadow: 0 1rem 2rem rgba($color-dark-orange, 0.2);
+
+    @include respond(phone) {
+      width: 30rem;
+    }
   }
 
   a:link,
