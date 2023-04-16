@@ -870,8 +870,8 @@ body {
   }
 }
 .section-quotes .rowflexq .quote-figure {
-  width: 35rem;
-  height: 10rem;
+  width: 37rem;
+  height: 11rem;
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/img/stones-g59bf854f1_1920.jpg-verysmall.jpg");
   clip-path: circle(45% at 50% 50%);
   background-position: top;
