@@ -69,6 +69,12 @@ body {
   }
 }
 
+.phone {
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+}
+
 .hs-color-blue {
   background-image: linear-gradient(to right, $color-light-blue, $color-dark-blue);
   -webkit-background-clip: text;
