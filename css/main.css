@@ -1171,9 +1171,11 @@ body {
 }
 
 .copyright {
-  height: 10rem;
+  height: 20rem;
   background-color: #333;
   color: #f7f7f7;
   text-align: center;
-  padding: 3.5rem 0;
+  padding: 7rem 0;
+  margin-top: -10rem;
+  position: relative;
 }/*# sourceMappingURL=main.css.map */
